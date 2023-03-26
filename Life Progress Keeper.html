@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Life Progress Keeper (LPK)</title>
+        <link rel="stylesheet" href="Style sheets\main.css">
+    </head>
+    <body>
+        <div id="main_level_container">
+            <label for="main_level_field" id="main_level_field_label"></label>
+            <div id="main_level_field">
+                <div id="main_level"></div>
+            </div>
+        </div>
+        <br/>
+        <div id="horizontal_line"></div>
+        <br/>
+        <div id="add_new_progress_form_container">
+            <label for="add_new_progress_form">Dodaj nowy poziom</label>
+            <div id="break_line"></div>
+            <div id="add_new_progress_form">
+                <label for="new_progress_name">Nazwa nowego poziomu</label>&nbsp;
+                <input type="text" id="new_progress_name" class="add_new_progress_form_elements" autocomplete="off"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="new_progress_description">Wpis/log nowego poziomu (opcjonalne)</label>&nbsp;
+                <textarea id="new_progress_description" class="add_new_progress_form_elements" autocomplete="off"></textarea>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="new_progress_level_color">Kolor nowego poziomu</label>&nbsp;
+                <input type="color" id="new_progress_level_color" class="add_new_progress_form_elements" autocomplete="off"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button id="add_new_progress_button">Dodaj nowy poziom</button>
+            </div>
+        </div>
+        <br/>
+        <div id="horizontal_line"></div>
+        <br/>
+        <div id="sub_levels_container"></div>
+        <script src="Scripts\back_to_default_values.js"></script>
+        <script src="Scripts\display_main_level.js"></script>
+        <script src="Scripts\sub_levels_logs_data_bank.js"></script>
+        <script src="Scripts\load_sub_levels.js"></script>
+        <script src="Scripts\add_new_progress.js"></script>
+        <script src="Scripts\show_sub_level_log.js"></script>
+        <script src="Scripts\save_sub_levels.js"></script>
+        <script src="Scripts\add_new_log_activity.js"></script>
+        <script src="Scripts\change_sub_level_width.js"></script>
+        <script src="Scripts\check_sub_level.js"></script>
+        <script src="Scripts\change_to_mobile_ver_manual.js"></script>
+        <script src="Scripts\change_to_mobile_ver_auto.js"></script>
+        <script src="Scripts\adjust_changed_elements.js"></script>
+    </body>
+</html>
